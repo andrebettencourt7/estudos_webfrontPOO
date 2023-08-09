@@ -3,8 +3,6 @@
 
 //const person = {name: "André Luis", age: 23, weight: "70kb"};
 
-//2.Forma - JSON
-
 const userName = document.getElementById("name");
 const userName2 = document.getElementById("name2");
 const prod = document.getElementById("product");
@@ -41,9 +39,10 @@ const person = {
     },
 
     calcMonth: function (){
-        const currentMonth = new Date(Date.now)
+        const currentMonth = new Date(Date.now())
         return (currentMonth.getMonth() +1) - this.month
     }
+
  
     
 }
@@ -68,7 +67,5 @@ button.addEventListener('click', ()=>{
     userName.textContent = person.calcAge();
 
 })
-
-
 
 userName.textContent = person.name;
